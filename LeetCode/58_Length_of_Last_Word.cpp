@@ -2,14 +2,23 @@
 using namespace std;
 
 int main(){
-    string s = "hello world";
-    int last_space = 0;
+    string s = "luffy is still joyboy";
+    int word_size = 0;
+    int counter = 0;
     for(int i = 0; i < s.length(); ++i) {
         if(s[i] == 32) {
-            last_space = i;
+            if(counter > 0) {
+                word_size = counter;
+            }
+            counter = 0;
+        } else {
+            ++counter; 
         }
     }
 
-    printf("%d\n", s.length() - ++last_space);
+    if(counter > 0) {
+        word_size = counter;
+    }
+    printf("%d\n", word_size);
     return 0;
 }
