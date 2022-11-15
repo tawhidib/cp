@@ -3,10 +3,8 @@ using namespace std;
 
 string longestCommonPrefix(vector<string>& strs) {
     vector<char> prefix;
-    char p;
-    for(int i = 0; i < strs.size(); ++i) {
-
-    }
+    string s = "";
+    string first_str = *(strs.begin());
 }
 
 int main(){
