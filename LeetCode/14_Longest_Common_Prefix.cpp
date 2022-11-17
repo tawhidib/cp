@@ -4,7 +4,7 @@ using namespace std;
 string prefixFinder (string str1, string str2) {
     string s = "";
     int i = 0;
-    while (str1[i] == str2[i] && str1.length() > 0 && str2.length() > 0)
+    while (str1[i] == str2[i] && str1.length() > i && str2.length() > i)
     {
         s = s + str1[i];
         ++i;
@@ -12,7 +12,6 @@ string prefixFinder (string str1, string str2) {
     return s;
 }
 string longestCommonPrefix(vector<string>& strs) {
-    vector<char> prefix;
     string s = "";
     if(strs.size() == 1){ 
         return *(strs.begin());
