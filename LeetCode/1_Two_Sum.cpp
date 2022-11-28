@@ -16,7 +16,7 @@ vector<int> twoSum(vector<int>& nums, int target) {
 }
 
 int main() {
-  vector <int>nums{2,7,11,15};
+  vector <int>nums{2,7,11,15, 20, 40};
   int target = 9;
   vector <int> result;
   for(int i = 0; i < nums.size(); ++i) {
