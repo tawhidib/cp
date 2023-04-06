@@ -93,3 +93,5 @@ const list = myDoublyList.printList();
 // const reverseList = myDoublyList.printReverse();
 console.log(list);
 // console.log(reverseList);
+
+console.log([1, 2, 3].length);
